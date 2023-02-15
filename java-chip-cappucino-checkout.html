@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="icon" href="..//..//img/logo.png">
+    <link rel="stylesheet" href="../assets/css/checkout-page.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li id="home-btn"><a href="..//index.html">Home</a></li>
+                <li id="about-but"><a href="..//index.html">About us</a></li>
+            </ul>
+
+            <img src="../img/logo.png" alt="logo" id="logo">
+
+            <ul>
+                <li id="menu-but"><a href="..//index.html">Menu</a></li>
+                <li id="contact-but"><a href="..//index.html">Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="checkout-block">
+                <h1>Checkout</h1>
+                <div class="prices">
+                    <div class="text">
+                        <h3>Java Chip Frappucino</h3>
+                        <h4>Promocode</h4>
+                        <h2>Total</h2>
+                    </div>
+                    <div class="costs">
+                        <p id="prod-price">$0.00</p>
+                        <p id="promo-price">-$0.00</p>
+                        <p id="total-price">$0.00</p>
+                    </div>
+                </div>
+                <div class="payments">
+                    <img src="../img/checkout-icons/debit-card_svgrepo.com.png" alt="" onclick="debitCard()">
+                    <img src="../img/checkout-icons/google-pay_svgrepo.com.png" alt="">
+                    <img src="../img/checkout-icons/apple-pay_svgrepo.com.png" alt="">
+                    <img src="../img/checkout-icons/paypal_svgrepo.com.png" alt="">
+                </div>
+                <div class="debit-card" id="debitPayment">
+                    <div class="debit-card-inputs">
+                        <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="0000 0000 0000 0000" class="card-number">
+                    <div class="date-cvc">
+                        <span class="expiration">
+                            <input type="text" name="month" placeholder="MM" maxlength="2" size="2" />
+                            <span>/</span>
+                            <input type="text" name="year" placeholder="YY" maxlength="2" size="2" />
+                        </span>
+                        <input type="text" name="" id="" class="cvc" maxlength="3" placeholder="CVC">
+                    </div>
+                    
+                    </div>
+                </div>
+
+                <a href="..//index.html" class="but">
+                    <button class="order-but">
+                        Order
+                    </button>
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="../assets/js/order/iced-blonde-order-script.js"></script>
+</body>
+</html>

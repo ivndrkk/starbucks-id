@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your order</title>
+    <link rel="stylesheet" href="../assets/css/order.css">
+    <link rel="icon" href="..//img/logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li id="home-btn"><a href="..//index.html">Home</a></li>
+                <li id="about-but"><a href="..//index.html">About us</a></li>
+            </ul>
+
+            <img src="../img/logo.png" alt="logo" id="logo">
+
+            <ul>
+                <li id="menu-but"><a href="..//index.html">Menu</a></li>
+                <li id="contact-but"><a href="..//index.html">Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="order-info">
+                <h1>Your order</h1>
+                <div class="order-info-container">
+                    <img src="../img/catalogue/b6.png" alt="">
+                    <div class="order-info-text">
+                        <h2>Chai Tea<br>Latte</h2>
+                        <p>Black tea infused with cinnamon, clove and other warming spices is combined with
+                            steamed milk and topped with foam for the perfect balance of sweet and spicy. An iconic chai</p>
+                        <div class="price-size">
+                            <span class="price" id="price">$3.65</span>
+                            <ul>
+                                <li>
+                                    <div class="size-item-s" id="s-size" onclick="sSizeChange()">
+                                        <span class="size">S</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="size-item-m" id="m-size" onclick="mSizeChange()">
+                                        <span class="size">M</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="size-item-l" id="l-size" onclick="lSizeChange() ">
+                                        <span class="size">L</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promocode-input">
+                <h2>Promocode</h2>
+                <input type="text" name="" id="">
+            </div>
+
+            <div class="adress">
+                <h2>Address information</h2>
+                <div class="inputs">
+                    <div class="input-item">
+                        <p>Your name: </p>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="input-item">
+                        <p>Your phone number: </p>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="input-item">
+                        <p>County: </p>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="input-item">
+                        <p>Town: </p>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="input-item">
+                        <p>Address line: </p>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="input-item">
+                        <p>Postcode: </p>
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+            </div>
+            <a href="./chai-tea-latte-checkout.html">
+                <button class="procced-tocheckout">
+                    Checkout
+                </button>
+            </a>
+        </div>
+    </main>
+    <script src="../assets/js/order/chai-tea-latte-script.js"></script>
+</body>
+
+</html>

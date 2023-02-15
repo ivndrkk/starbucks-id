@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+body{
+    height: fit-content;
+    margin: 0;
+    border: 0;
+}
+
+header{
+    background-color: #2A362A;
+    height: 99px;
+}
+
+header .container{
+    height: 99px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header ul{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    color: #fff;
+    font-family: "exo 2";
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+header ul li:not(:last-child){
+    margin-right: 136px;
+}
+
+header ul li{
+    margin: auto;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+header img{
+    border-radius: 100%;
+    margin-top: 2px;
+    width: 146px;
+    height: 146px;
+    box-shadow: 0px 0px 0px 18px #2A362A;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+header img:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s;
+    box-shadow: 0px 0px 0px 20px #2A362A;
+}
+
+main {
+    background-image: url("../..//..//img/order-page/checkout-desktop-bg.png");
+    background-position: 100%;
+    background-size: cover;
+    height: 1038px;
+}
+
+main .container {
+    height: 903px;
+    padding-top: 111px;
+}
+
+.checkout-block{
+    height: 487px;
+    width: 1038px;
+    background-color: #2A362A;
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-left: 90px;
+    padding-right: 90px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+.checkout-block h1{
+    width: 243px;
+    height: 59px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFF1DA;
+    margin: 0 auto;
+    margin-bottom: 43px;
+
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+}
+
+.text h3{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFF1DA;
+    margin-bottom: 15px;
+}
+
+.text h4{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFF1DA;
+    margin-bottom: 15px;
+}
+
+.text h2{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFF1DA;
+}
+
+.costs p{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: #CCA35B;
+}
+
+.costs{
+    margin-left: 31px;
+}
+
+.costs p:nth-child(2){
+    margin-left: -12px;
+    margin-bottom: 8px;
+}
+
+.costs p:nth-child(1){
+    margin-bottom: 4px;
+}
+
+.payments{
+    display: flex;
+    flex-direction: row;
+    height: 107px;
+    margin-top: 50px;
+}
+
+.payments img{
+    height: 107px;
+    width: 107px;
+    cursor: pointer;
+}
+
+.payments img:not(:last-child){
+    margin-right: 22px;
+}
+
+.date-cvc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 387px;
+    margin-top: 29px;
+}
+
+.card-number{
+    width: 388px;
+    height: 70px;
+    background: #4F694F;
+    border: 0;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Exo 2';
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.expiration input {
+    border: 0;
+    width: 57px;
+    height: 41px;
+    background: #4F694F;
+    border: 0;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Exo 2';
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cvc{
+    width: 112px;
+    height: 41px;
+    background: #4F694F;
+    border: 0;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Exo 2';
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.debit-card{
+    width: 1038px;
+    height: 199px;
+    margin-left: -90px;
+    margin-top: 53px;
+    background-color: #2A362A;
+    display: none;
+}
+
+.debit-card input{
+    margin-left: 20px;
+}
+
+.debit-card-inputs{
+    margin-left: 79px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.order-but{
+    width: 333px;
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+    background: #2A362A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 74px;
+    color: #FFF1DA;
+    text-align: center;
+    border: 0;   
+    transition: transform 0.1s;
+}
+
+.order-but:hover{
+    transform: scale(1.1);
+    transition: transform 0.1s;
+}
+
+a{
+    text-decoration-line: none;
+    color: inherit;
+}
+
+header li:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+header li:active{
+    color: #CCA35B;
+}
